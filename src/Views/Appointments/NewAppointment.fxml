@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Appointments.NewAppointment">
+   <children>
+      <TextField fx:id="titleTextField" layoutX="150.0" layoutY="118.0" prefWidth="150.0" promptText="title">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <TextField disable="true" layoutX="150.0" layoutY="38.0" prefWidth="150.0" promptText="Auto - Generated">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="32.0" layoutY="43.0" text="Appointment ID: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="123.0" text="Title: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="409.0" text="Description: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="163.0" text="Location: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="216.0" layoutY="512.0" mnemonicParsing="false" onAction="#onSaveAppointment" text="Save Appointment">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="512.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="contactComboBox" layoutX="150.0" layoutY="76.0" prefWidth="150.0" promptText="--" />
+      <Label layoutX="127.0" layoutY="219.0" />
+      <Label layoutX="32.0" layoutY="81.0" text="Contact: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="211.0" text="Type: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDatePicker" layoutX="150.0" layoutY="261.0" prefWidth="150.0" promptText="select start date" />
+      <Line endX="347.71697998046875" layoutX="115.0" layoutY="381.0" startX="-100.0" />
+      <TextArea fx:id="descriptionTextField" layoutX="150.0" layoutY="394.0" prefHeight="93.0" prefWidth="193.0" promptText="Description" />
+      <Label layoutX="32.0" layoutY="266.0" text="Date:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="238.0" text="Start:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startHour" layoutX="312.0" layoutY="259.0" prefHeight="26.0" prefWidth="108.0" promptText="--" />
+      <ComboBox fx:id="endHour" layoutX="432.0" layoutY="259.0" prefHeight="26.0" prefWidth="108.0" promptText="--" />
+      <Label layoutX="32.0" layoutY="307.0" text="User ID: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="350.0" text="Customer Id: ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="238.0" text="End:">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="userIdComboBox" layoutX="150.0" layoutY="302.0" prefWidth="150.0" promptText="--" />
+      <ComboBox fx:id="customerIdCombobox" layoutX="150.0" layoutY="345.0" prefWidth="150.0" promptText="--" />
+      <Label fx:id="timesErrorMessage" layoutX="542.0" layoutY="210.0" prefHeight="112.0" prefWidth="97.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="contactErrorMessage" layoutX="322.0" layoutY="77.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="titleErrorMesssage" layoutX="322.0" layoutY="118.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="locationErrorMessage" layoutX="322.0" layoutY="167.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="typeErrorMessage" layoutX="322.0" layoutY="215.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="customerErrorMessage" layoutX="322.0" layoutY="346.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <Label fx:id="userIdErrorMessage" layoutX="322.0" layoutY="303.0" prefHeight="25.0" prefWidth="220.0" textFill="#f30a0a" wrapText="true" />
+      <ComboBox fx:id="typeComboBox" layoutX="150.0" layoutY="206.0" prefWidth="150.0" promptText="--" />
+      <ComboBox fx:id="locationComboBox" layoutX="150.0" layoutY="166.0" prefWidth="150.0" promptText="--" />
+   </children>
+</AnchorPane>

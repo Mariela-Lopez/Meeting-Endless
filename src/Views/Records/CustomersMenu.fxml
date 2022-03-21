@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="293.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Records.CustomersMenu">
+   <children>
+      <TableView fx:id="customersTableView" layoutX="15.0" layoutY="52.0" prefHeight="200.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="customerId" prefWidth="78.0" text="Customer ID" />
+          <TableColumn fx:id="customerName" prefWidth="99.0" text="Name" />
+            <TableColumn fx:id="customerAddress" prefWidth="163.0" text="Address" />
+            <TableColumn fx:id="customerState" prefWidth="65.0" text="Division" />
+            <TableColumn fx:id="customerZip" prefWidth="45.0" text="Zip" />
+            <TableColumn fx:id="customerPhoneNumber" prefWidth="119.0" text="Phone Number" />
+        </columns>
+      </TableView>
+      <Label layoutX="239.0" layoutY="14.0" text="Customers">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="426.0" layoutY="25.0" mnemonicParsing="false" onAction="#onNewClick" prefHeight="21.0" prefWidth="31.0" style="-fx-background-color: green;" text="+">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="470.0" layoutY="25.0" mnemonicParsing="false" onAction="#onUpdateClick" prefHeight="21.0" prefWidth="114.0" text="Update or Delete" textFill="#626a85">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="486.0" layoutY="263.0" mnemonicParsing="false" onAction="#onCancelClick" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: none;" text="Cancel" textFill="#626a85">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

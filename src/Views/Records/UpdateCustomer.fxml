@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="406.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Records.UpdateCustomer">
+    <children>
+        <TextField fx:id="customerNameTextField" layoutX="147.0" layoutY="65.0" prefWidth="170.0" promptText="First and Last Name">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="customerIdTextField" disable="true" layoutX="147.0" layoutY="25.0" prefWidth="170.0">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="streetAddressTextField" layoutX="147.0" layoutY="105.0" prefWidth="170.0" promptText="street, city">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextField>
+        <Label layoutX="32.0" layoutY="30.0" text="Customer ID:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="70.0" text="Customer Name:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="110.0" text="Street Address:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <Button layoutX="38.0" layoutY="317.0" mnemonicParsing="false" onAction="#onSaveCustomer" prefWidth="118.0" text="Save Customer" textFill="#626a85">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="255.0" layoutY="370.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: none;" text="Cancel" textFill="#626a85">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="countryComboBox" layoutX="147.0" layoutY="185.0" onAction="#updateState" prefWidth="170.0" promptText="Select Country" />
+        <Label layoutX="127.0" layoutY="219.0" />
+        <Label layoutX="32.0" layoutY="190.0" text="Country" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="32.0" layoutY="150.0" text="Zip Code:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="zipCodeTextField" layoutX="147.0" layoutY="145.0" prefWidth="170.0" promptText="ZIP">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextField>
+        <Label layoutX="32.0" layoutY="270.0" text="Phone Number:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="phoneNumberTextField" layoutX="147.0" layoutY="265.0" prefWidth="170.0" promptText="555-555-5555">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </TextField>
+        <Label layoutX="32.0" layoutY="230.0" text="State:" textFill="#817c7c">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="stateComboBox" layoutX="147.0" layoutY="225.0" prefWidth="170.0" promptText="Select state or region" />
+      <Button layoutX="193.0" layoutY="317.0" mnemonicParsing="false" onAction="#onDeleteCustomer" prefWidth="118.0" style="-fx-background-color: Red;" text="Delete Customer" textFill="#556f81">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
