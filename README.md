@@ -1,4 +1,4 @@
-# Scheduling-Application
+# Meeting-Endless
 A service to provide the ability to setup appointments/meetings for customers and organize by weeks or the month. 
 Also maintains the ability to setup different customers from different regions.
 
